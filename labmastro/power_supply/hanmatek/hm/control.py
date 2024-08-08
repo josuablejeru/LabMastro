@@ -17,7 +17,7 @@ class HanmatekHmControl:
     def get_current(self):
         """Read the current amperage display value."""
         current = self.instrument.read_register(0x0011, 3, functioncode=3)
-        return round(current / 1000, 3)
+        return round(current, 2)
 
     def get_power(self):
         """Read the current power display value."""
