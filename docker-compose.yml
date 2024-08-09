@@ -1,4 +1,0 @@
-services:
-  web:
-    build: .
-    command: streamlit run ./labmastro/main.py
